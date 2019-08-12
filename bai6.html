@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    for (let i=0; i<10; i++){
+        let a = Math.floor(Math.random()*100);
+        mang.push(a);
+    }
+    console.log(mang);
+    let v = parseInt(prompt("nhap vao V"));
+    let c ;
+    for (let b = 0;b <10;b++){
+        if (mang[b]==v){
+            c = 1;
+        }
+    }
+    if(c ==1){
+        document.write("V is in array");
+    }else {document.write("V is not array");
+    }
+</script>
+</body>
+</html>

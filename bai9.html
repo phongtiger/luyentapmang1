@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let manga = [];
+    let mangb = [];
+    let mangc = [];
+    for (let i=0; i<10; i++){
+        let a = Math.floor(Math.random()*100);
+        manga.push(a);
+    }
+    console.log(manga);
+    for (let i=0; i<10; i++){
+        let b = Math.floor(Math.random()*100);
+        mangb.push(b);
+    }
+    console.log(mangb);
+    for (let j = 0; j<10; j++){
+        mangc.push(manga[j]);
+        mangc.push(mangb[j]);
+    }
+    console.log(mangc);
+
+</script>
+</body>
+</html>

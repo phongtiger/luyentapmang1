@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = 20;
+    let mang = [];
+    for (let i=0; i<n; i++){
+        let a = Math.floor(Math.random()*10000);
+        mang.push(a);
+    }
+    console.log(mang);
+    let max = mang[0];
+    for (let j =1;j<n;j++){
+        if (max < mang[(j)]){
+            max = mang[(j)];
+        }
+    }
+    console.log(max);
+    let tong= 0;
+    let tb;
+    for (let b = 0;b<n;b++){
+        tong +=mang[b];
+    }
+    tb= tong/n;
+    console.log(tb);
+</script>
+</body>
+</html>
